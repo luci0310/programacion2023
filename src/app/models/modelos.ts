@@ -11,3 +11,4 @@ export interface Nosotros{
     descripcion: string;
     alt: string;
 }
+   
