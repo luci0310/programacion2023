@@ -11,6 +11,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 
+//formulario 
+import { FormsModule } from '@angular/forms';
+
+//servicios
+import { AuthService } from './service/auth.service';
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -22,13 +28,16 @@ import {MatButtonModule} from '@angular/material/button';
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   exports:[
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
-  ]
+    MatButtonModule,
+    FormsModule
+  ],
+  providers:[AuthService] //proveedor ->servicios
 })
 export class AuthModule { }
